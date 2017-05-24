@@ -107,7 +107,7 @@ function Sitesave() {
 function Siteedit($id) {
 
         global $xoopsDB, $xoopsModule;
-        $myts =& MyTextSanitizer::getInstance();
+        $myts = MyTextSanitizer::getInstance();
         xoops_cp_header();
 
         $result=$xoopsDB->query("SELECT id, user_id, website_name, website_url, website_description, website_approve FROM ".$xoopsDB->prefix("toplist_websites")." WHERE id = $id ");
@@ -152,7 +152,7 @@ function Siteedit($id) {
 function Siteshow() {
 
         global $xoopsDB;
-        $myts =& MyTextSanitizer::getInstance();
+        $myts = MyTextSanitizer::getInstance();
         xoops_cp_header();
 
 		echo "<table border='0' width='90%' class='outer' align='center'>
